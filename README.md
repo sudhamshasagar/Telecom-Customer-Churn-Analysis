@@ -1,48 +1,46 @@
-# 📊 Telecom Customer Churn Analysis – Power BI
+# 📊 Telecom Customer Churn Analysis – SQL + Power BI
 
-This project analyzes customer churn behavior for a telecom provider using Power BI. The dataset includes 7,032 customers and their attributes like services used, demographics, contract type, and monthly charges.
+This project explores customer churn trends in a telecom company using SQL for preprocessing and Power BI for visualization.
+
+---
 
 ## 🎯 Objective
-To identify patterns and segments contributing to high churn and provide actionable insights for retention strategies.
+Analyze churn drivers and customer behaviors using SQL queries and visualize insights with Power BI.
+
+---
+
+## 🧮 SQL Tasks
+- Removed null entries and cleaned raw data
+- Created tenure buckets (0–12, 13–24, etc.) and monthly charge bins
+- Joined and filtered service combinations (Online Security, Tech Support, etc.)
+- Grouped customers by contract type, internet service, and churn status
 
 ---
 
 ## 📌 Key Features
 
+- **Data Preprocessing in SQL**
+  - Binning, segmentation, filtering, and transformation
 - **DAX-Based Measures**
-  - `Churn Rate`: Calculates churned customers as a percentage of total
-  - `Customer Count`: Total customers per segment
-
-- **Dynamic Filters**
-  - Gender, Senior Citizen, Internet Service, Device Protection, etc.
-
-- **Visuals Created**
-  - Churn by Tenure Bucket (Bar)
-  - Churn by Monthly Charges (Line + Area)
-  - Churn Rate by Contract Type (Pie)
-  - Segment Table with Conditional Formatting for High-Risk Customers
+  - Churn Rate, Customer Count by segment
+- **Dynamic Filters & Slicers**
+  - Gender, Senior Citizen, Services, Internet Type
+- **Advanced Visuals**
+  - Line charts, pie charts, treemaps, matrix tables
 
 ---
 
 ## 🔍 Sample Insights
 
-- 📈 Churn rate for **Month-to-month + No Tech Support + Fiber Optic** = **52%**
-- 👴 Senior citizens with high monthly charges had higher churn
-- 📉 Customers with long tenure (49+ months) had churn rates below 10%
-
+- 📈 Highest churn in **Month-to-month + Fiber Optic + No Tech Support**: **60%**
 ---
 
-## 🛠️ Tools & Tech
+## 🛠️ Tech Stack
 
-- **Power BI**
-- **DAX**
-- **Data Modeling & Relationships**
-- **Custom Measures & Conditional Formatting**
+- **SQL** – for data cleaning, transformations, and segmentation
+- **Power BI** – for dashboard creation and interactive insights
+- **DAX** – for creating custom measures and KPIs
 
----
-
-## 📂 Dataset
-Dataset sourced from Kaggle: [Telco Customer Churn Dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
 ---
 
